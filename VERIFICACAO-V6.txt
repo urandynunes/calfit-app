@@ -1,0 +1,29 @@
+CALFIT APP V6 — VERIFICAÇÃO FINAL
+
+RECURSOS IMPLEMENTADOS E VERIFICADOS
+- Indicador: CalFit V6 · 291 alimentos.
+- Histórico alimentar por data.
+- Registros novos recebem a data selecionada.
+- Migração: registros antigos da V5 sem data são preservados e associados ao dia da primeira abertura da V6.
+- Favoritos de alimentos.
+- Refeições frequentes: salvar uma refeição e adicioná-la novamente.
+- Evolução: peso atual/inicial/meta, gráfico dos últimos registros de peso, calorias dos últimos 7 dias e média de calorias dos dias registrados no mês.
+- Backup: exportação JSON.
+- Restauração: importação de backup JSON com validação básica e confirmação antes de substituir os dados.
+- Banco preservado com 291 alimentos/preparos.
+- Medidas caseiras preservadas.
+- Cache V6, limpeza de caches antigos, network-first e atualização do service worker preservados.
+- Dados continuam no localStorage, sem servidor e sem mensalidade adicional.
+
+TESTES
+- Sintaxe JavaScript verificada pelo Node: OK.
+- Teste de histórico entre datas: OK.
+- Favoritos: OK.
+- Salvar e reutilizar refeição: OK.
+- Serialização/restauração de backup: OK.
+- Verificações estáticas de todos os recursos acima: OK.
+
+OBSERVAÇÕES
+- Valores nutricionais e medidas caseiras são estimativas.
+- A média mensal considera os dias do mês que possuem alimentos registrados.
+- O gráfico de peso usa os últimos 12 registros.
