@@ -1,4 +1,4 @@
-const CACHE='calfit-v6-20261001';
+const CACHE='calfit-v7-20261001';
 const ASSETS=['./','./index.html','./style.css','./app.js','./manifest.json'];
 self.addEventListener('install',event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});
 self.addEventListener('activate',event=>{event.waitUntil(Promise.all([caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))),self.clients.claim()]))});

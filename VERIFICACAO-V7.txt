@@ -1,0 +1,32 @@
+CALFIT APP V7 — VERIFICAÇÃO FINAL
+
+RECURSOS IMPLEMENTADOS
+- Indicador CalFit V7.
+- Banco base preservado com 291 alimentos + banco pessoal do usuário.
+- Meta diária de proteína configurável e barra de progresso.
+- Meu Prato / refeições frequentes.
+- Copiar todos os registros do dia anterior.
+- Resumo de calorias e macronutrientes dos últimos 7 dias.
+- Sequência de dias com registros.
+- Filtro por categorias de alimentos.
+- Meus alimentos: cadastros manuais ficam salvos e pesquisáveis.
+- Edição de lançamentos do diário.
+- Edição de peso, meta, objetivo, atividade e meta de proteína.
+- Medidas corporais: cintura, abdômen, quadril, braço, coxa e panturrilha.
+- Fotos de evolução locais, comprimidas e limitadas às 20 mais recentes.
+- Código de barras: leitura quando o navegador suporta BarcodeDetector; entrada manual como alternativa. O código localiza alimentos pessoais já cadastrados. No primeiro cadastro, os dados nutricionais vêm do rótulo informado pelo usuário; não há API paga.
+- Backup/restauração V7 inclui dados pessoais, medidas, alimentos pessoais e fotos.
+- Histórico, favoritos, medidas caseiras e recursos da V6 preservados.
+- Cache atualizado para V7 e estratégia network-first preservada.
+
+VERIFICAÇÕES EXECUTADAS
+- Sintaxe JavaScript com node --check: OK.
+- Banco base: 291 itens: OK.
+- Presença das rotinas de meta de proteína, copiar dia, sequência, categorias, alimentos pessoais, edição, medidas, fotos, código de barras, resumo semanal e backup: OK.
+- Cache V7: OK.
+
+OBSERVAÇÕES
+- Valores nutricionais e medidas caseiras são estimativas e variam por marca, receita e preparo.
+- A meta de proteína inicial é uma estimativa configurável; o usuário pode alterá-la no Perfil.
+- A leitura automática de código de barras depende do suporte do navegador/aparelho; há alternativa por digitação.
+- Fotos ficam no armazenamento local do navegador e podem ocupar espaço; o app comprime e limita a 20 fotos.
