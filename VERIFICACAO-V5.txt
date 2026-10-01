@@ -1,0 +1,11 @@
+CALFIT APP V5 — VERIFICAÇÃO FINAL
+Banco verificado: 291 alimentos e preparos.
+Indicador visível no Perfil: CalFit V5 · 291 alimentos.
+
+Testes aprovados:
+carne assada; cuscuz com ovo; macarrão à bolonhesa; picanha; frango à milanesa; salmão; tapioca com frango; bobó de camarão.
+Medidas caseiras preservadas.
+Cache V5/network-first e atualização do service worker preservados.
+Persistência local preservada.
+
+Valores nutricionais e medidas caseiras são estimativas e podem variar por marca, receita, corte e preparo.
